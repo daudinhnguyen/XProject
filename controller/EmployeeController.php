@@ -95,9 +95,9 @@ class EmployeeController
       if(count($employee) > 0){
         $isDelete = $employeeModal->delete($id);
         if ($isDelete) {
-          $message = "Cập nhật thành công";
+          $message = "Xóa thành công";
         } else {
-          $message = "Cập nhật thất bại";
+          $message = "Xóa thất bại";
         }
         header("Location: index.php?controller=employee&action=index&tt=$message");
       }
